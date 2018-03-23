@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         Intent turnOn = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
         startActivityForResult(turnOn, 0);
         BA = BluetoothAdapter.getDefaultAdapter();
-       if(BA.isEnabled()){textState.setText("Bluetooth ON");}
-        else textState.setText("Bluetooth OFF");
+       if(BA.isEnabled()){textState.setText("Bluetooth on");}
+        else textState.setText("Bluetooth Off");
 
     }
 
